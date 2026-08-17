@@ -203,8 +203,6 @@ The project satisfies the required submission components:
 * **Live Deployment:** Streamlit Community Cloud
 * **BITS Virtual Lab Evidence:** Screenshot of assignment execution in the BITS Virtual Lab.
 
-The README content is intended to be included in the final PDF submission as required by the assignment.
-
 ---
 
 ## 10. Conclusion
