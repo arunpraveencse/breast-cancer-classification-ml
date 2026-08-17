@@ -1,14 +1,14 @@
 # Breast Cancer Classification using Machine Learning
 
-## 1\. Problem Statement
+## 1. Problem Statement
 
 The objective of this project is to build and compare multiple machine-learning classification models for breast-tumor classification. The models classify observations into **Benign (B)** and **Malignant (M)** classes using the Breast Cancer Wisconsin (Diagnostic) dataset.
 
 The project implements the classification models required in the BITS WILP Machine Learning Assignment - 2, evaluates them using multiple performance metrics, and provides an interactive Streamlit application for testing and comparing the trained models.
 
-\---
+---
 
-## 2\. Dataset Description
+## 2. Dataset Description
 
 ### Dataset
 
@@ -38,9 +38,9 @@ An **80:20 stratified train/test split** with `random\_state=42` was used:
 
 `StandardScaler` was used for the models requiring scaled numerical features. The fitted scaler is stored as `model/scaler.pkl`.
 
-\---
+---
 
-## 3\. GitHub Repository Link
+## 3. GitHub Repository Link
 
 **GitHub Repository:**  
 https://github.com/arunpraveencse/breast-cancer-classification-ml
@@ -55,20 +55,20 @@ breast-cancer-classification-ml/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-├── test\_data.csv
+├── test\data.csv
 │
 └── model/
-    ├── decision\_tree.pkl
+    ├── decision\tree.pkl
     ├── knn.pkl
-    ├── logistic\_regression.pkl
-    ├── naive\_bayes.pkl
-    ├── random\_forest.pkl
+    ├── logistic\regression.pkl
+    ├── naive\bayes.pkl
+    ├── random\forest.pkl
     └── scaler.pkl
 ```
 
 \---
 
-## 4\. Models Used
+## 4. Models Used
 
 The assignment explicitly lists the following classification models:
 
@@ -103,9 +103,9 @@ The following results were obtained on the supplied `test\_data.csv` through the
 |Gaussian Naive Bayes|0.9211|0.9891|0.9231|0.8571|0.8889|0.8292|
 |**Random Forest (Ensemble)**|**0.9737**|**0.9929**|**1.0000**|**0.9286**|**0.9630**|**0.9442**|
 
-\---
+---
 
-## 5\. Observations on Model Performance
+## 5. Observations on Model Performance
 
 |ML Model|Observation about Model Performance|
 |-|-|
@@ -121,9 +121,9 @@ The following results were obtained on the supplied `test\_data.csv` through the
 
 It provides the highest accuracy, precision, F1 score, and MCC among the five implemented models while maintaining a high AUC and recall.
 
-\---
+---
 
-## 6\. Streamlit Deployment
+## 6. Streamlit Deployment
 
 The project was deployed using **Streamlit Community Cloud**.
 
@@ -150,9 +150,9 @@ The uploaded test CSV should contain the **30 model input features** used during
 
 If the `Diagnosis` column is included, the application calculates the evaluation metrics and confusion matrix.
 
-\---
+---
 
-## 7\. Running the Project Locally
+## 7. Running the Project Locally
 
 ### Clone the repository
 
@@ -173,24 +173,24 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-\---
+---
 
-## 8\. Saved Model Files
+## 8. Saved Model Files
 
 The trained models are stored in the `model/` directory:
 
-* `logistic\_regression.pkl`
-* `decision\_tree.pkl`
+* `logistic_regression.pkl`
+* `decision_tree.pkl`
 * `knn.pkl`
-* `naive\_bayes.pkl`
-* `random\_forest.pkl`
+* `naive_bayes.pkl`
+* `random_forest.pkl`
 * `scaler.pkl`
 
 The trained models and scaler are stored in the repository so that the Streamlit application can load them directly for inference without retraining during application execution.
 
-\---
+---
 
-## 9\. Assignment Submission Evidence
+## 9. Assignment Submission Evidence
 
 The project satisfies the required submission components:
 
@@ -198,16 +198,16 @@ The project satisfies the required submission components:
 * **Source Code:** `app.py`
 * **Dependencies:** `requirements.txt`
 * **Documentation:** `README.md`
-* **Test Data:** `test\_data.csv`
-* **Saved Models:** `model/` directory
+* **Test Data:** `test_data.csv`
+* **Saved Models:** `model` directory
 * **Live Deployment:** Streamlit Community Cloud
 * **BITS Virtual Lab Evidence:** Screenshot of assignment execution in the BITS Virtual Lab.
 
 The README content is intended to be included in the final PDF submission as required by the assignment.
 
-\---
+---
 
-## 10\. Conclusion
+## 10. Conclusion
 
 Five classification models were implemented and evaluated on the same breast-cancer dataset using six evaluation metrics.
 
